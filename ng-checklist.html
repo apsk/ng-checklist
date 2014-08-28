@@ -1,0 +1,21 @@
+<div class="checklist">
+    <div class="header">
+        <i class="fa fa-ban"></i>
+        {{header}}
+        <i class="showhide fa fa-chevron-circle-up"></i>
+    </div>
+    <div class="rows">
+        <div class="scrollable-content">
+            <div ng-repeat="entry in entries" class="row" ng-click="toggle(entry)">
+                <div class="fa checkbox"
+                     ng-class="{true: 'fa-check-square-o', false: 'fa-square-o'}[entry.checked]">
+                </div>
+                {{entry.text}}
+                <div class="statline">
+                    <div class="indicator" ng-style="{width: entry.count+'%'}"></div>
+                    <span class="label">{{entry.count}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
