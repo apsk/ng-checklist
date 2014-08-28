@@ -19,7 +19,7 @@ app.directive 'ngChecklist', ->
     $($elem[0]).find('.scrollable-content')
       .slimScroll(alwaysVisible: true, height: '100%')
     rootEl.resize ->
-      if rootEl.height() == 32
+      if rootEl.height() <= 32
         return if hidden
         hidden = true
         showHideBtn.removeClass('fa-chevron-circle-up')
