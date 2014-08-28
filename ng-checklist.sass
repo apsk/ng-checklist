@@ -1,0 +1,106 @@
+$background-color: #363A42
+$border-color: #363A42
+$header-color: #FFD966
+$text-color: #363A42
+
+.checklist
+  position: relative
+  border: 1px solid $border-color
+  border-top-right-radius: 10px
+  border-bottom-left-radius: 5px
+  font-size: 14px
+  background-color: $background-color
+  resize: vertical
+  overflow: hidden
+
+  .header
+    height: 24px
+    line-height: 26px
+    color: $header-color
+    text-align: center
+
+    .fa
+      display: inline-block
+      position: absolute
+      color: gray
+      &:hover
+        cursor: pointer
+        color: white
+
+    .fa-ban
+      display: none
+      left: 10px
+      top: 7px
+      &.enabled
+        display: inline-block
+
+    .showhide
+      top: 7px
+      right: 10px
+
+  .slimScrollBar
+    background-color: cadetblue !important
+    opacity: 1 !important
+
+  .rows
+    position: absolute
+    border-top: 1px solid $border-color
+    border-bottom: 1px solid $border-color
+    color: $text-color
+    top: 25px
+    left: 3px
+    right: 3px
+    bottom: 9px
+    background-color: white
+    resize: none
+    overflow: hidden
+    min-height: 0
+
+    .scrollable-content
+      width: 100%
+      height: 100%
+
+    .row
+      height: 20px
+      position: relative
+      padding-left: 8px
+      border-bottom: 1px solid lightgray
+      text-align: start
+      font-size: 12px
+      font-weight: normal
+      line-height: 20px
+      &:hover
+        cursor: pointer
+        background-color: lightcyan
+
+      .checkbox
+        display: inline-block
+        width: 12px
+        height: 9px
+        text-align: left
+        margin-right: 4px
+
+      .statline
+        display: block
+        position: absolute
+        top: 3px
+        right: 5px
+        width: 80px
+        height: 12px
+        line-height: 12px
+        border: 1px solid $border-color
+        text-align: center
+        vertical-align: middle
+        font-size: 10px
+
+        .indicator
+          display: inline-block
+          position: absolute
+          height: 12px
+          left: 0
+          background-color: $header-color
+          z-index: 0
+
+        .label
+          position: relative
+          z-index: 10
