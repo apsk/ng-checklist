@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title>Программирование - Олимпиадных задач нить</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419586312,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok2v=1613a3a185/"},atok:"a92e100209e6ca10c96cc2942331ea92",petok:"3c15ce3a241101b862f89d412248e5436943d1fa-1419616894-1800",zone:"2ch.hk",rocket:"0",apps:{"ga_key":{"ua":"UA-53637455-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link id="favicon" rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="initial-scale=1">
+<link href="/makaba/templates/css/normalize.css" type="text/css" rel="stylesheet">
+<link href="/makaba/templates/css/makaba.css" title="makaba" type="text/css" rel="stylesheet">
+<link href="/makaba/templates/css/font-awesome.min.css" title="makaba" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/makaba/templates/js/jquery.1.7.2.min.js"></script>
+<script type="text/javascript">
+            var thread_cookie = "pr_hidden_threads";
+    </script>
+<script type="text/javascript" src="/makaba/templates/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/makaba/templates/js/swag.js"></script>
+<script type="text/javascript" src="/makaba/templates/js/stuff1.js"></script>
+<script type="text/javascript" src="/makaba/templates/js/newwakaba.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="/makaba/templates/js/html5shiv.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+            loadInitialConfig({
+        thread_num: parseInt("420034"),
+        board: "pr"
+      });
+    </script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-53637455-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body class="replypage makaba">
+<input type="hidden" id="settings-comment-length" value="15000">
+<header>
+<div id="adminbar" class="adminbar-top">
+<ul class="menu">
+<ul class="menu-links-mob" style="float:left">
+<li><a href="/">Главная</a></li>
+<li><a id="settings" href="#">Настройка</a></li>
+<li class="desktop"><a href="http://m2-ch.ru" target="_blank">Mobile</a></li>
+<li class="desktop"><a href="/contacts.html">Контакты</a></li>
+<li class="desktop"><a id="nsfw" href="#">NSFW</a></li>
+<li class="desktop"><a href="/makaba/makaba.fcgi?task=catalog&board=pr">Каталог</a></li>
+<li class="desktop"><a href="#" id="fav-menu-btn">Избранное</a></li>
+<li>
+<select id="SwitchStyles" class="desktop style-switcher mselect">
+<option selected="true" value="makaba">Makaba</option>
+<option value="futaba">Futaba</option>
+<option value="burichan">Burichan</option>
+<option value="muon">Muon</option>
+<option value="neutron">Neutron</option>
+<option value="gurochan">Gurochan</option>
+<option value="konsole">Консолечка</option>
+</select>
+</li>
+</ul>
+<form class="search desktop" action="/makaba/makaba.fcgi" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="board" value="pr">
+<input type="hidden" name="task" value="search">
+<input type="text" name="find" placeholder="Поиск">
+
+<input type="submit" value="Поиск">
+</form>
+<ul id="boardNavMobile" class="board-list-mob mobile">
+<div>
+<select id="LakeNavForm">
+<option selected="true">Навигация</option>
+<optgroup label="Тематика">
+<option value="/app/">/app/</option>
+<option value="/au/">/au/</option>
+<option value="/bi/">/bi/</option>
+<option value="/biz/">/biz/</option>
+<option value="/bo/">/bo/</option>
+<option value="/c/">/c/</option>
+<option value="/em/">/em/</option>
+<option value="/ew/">/ew/</option>
+<option value="/fa/">/fa/</option>
+<option value="/fiz/">/fiz/</option>
+<option value="/fl/">/fl/</option>
+<option value="/ftb/">/ftb/</option>
+<option value="/gd/">/gd/</option>
+<option value="/hi/">/hi/</option>
+<option value="/hw/">/hw/</option>
+<option value="/me/">/me/</option>
+<option value="/mg/">/mg/</option>
+<option value="/mlp/">/mlp/</option>
+<option value="/mo/">/mo/</option>
+<option value="/mu/">/mu/</option>
+<option value="/ne/">/ne/</option>
+<option value="/ph/">/ph/</option>
+<option value="/po/">/po/</option>
+<option value="/pr/">/pr/</option>
+<option value="/psy/">/psy/</option>
+<option value="/ra/">/ra/</option>
+<option value="/re/">/re/</option>
+<option value="/s/">/s/</option>
+<option value="/sf/">/sf/</option>
+<option value="/sci/">/sci/</option>
+<option value="/sn/">/sn/</option>
+<option value="/sp/">/sp/</option>
+<option value="/spc/">/spc/</option>
+<option value="/t/">/t/</option>
+<option value="/tr/">/tr/</option>
+<option value="/tv/">/tv/</option>
+<option value="/un/">/un/</option>
+<option value="/w/">/w/</option>
+<option value="/wh/">/wh/</option>
+<option value="/wm/">/wm/</option>
+<option value="/chat/">/chat/</option>
+</optgroup>
+<optgroup label="Творчество">
+<option value="/di/">/di/</option>
+<option value="/de/">/de/</option>
+<option value="/diy/">/diy/</option>
+<option value="/f/">/f/</option>
+<option value="/mus/">/mus/</option>
+<option value="/o/">/o/</option>
+<option value="/pa/">/pa/</option>
+<option value="/p/">/p/</option>
+<option value="/wp/">/wp/</option>
+<option value="/td/">/td/</option>
+<option value="/trv/">/trv/</option>
+</optgroup>
+<optgroup label="Игры">
+<option value="/bg/">/bg/</option>
+<option value="/cg/">/cg/</option>
+<option value="/gb/">/gb/</option>
+<option value="/mc/">/mc/</option>
+<option value="/mmo/">/mmo/</option>
+<option value="/tes/">/tes/</option>
+<option value="/vg/">/vg/</option>
+<option value="/wr/">/wr/</option>
+</optgroup>
+<optgroup label="Японская культура">
+<option value="/a/">/a/</option>
+<option value="/aa/">/aa/</option>
+<option value="/fd/">/fd/</option>
+<option value="/ja/">/ja/</option>
+<option value="/ma/">/ma/</option>
+<option value="/rm/">/rm/</option>
+<option value="/to/">/to/</option>
+<option value="/vn/">/vn/</option>
+</optgroup>
+<optgroup label="Разное">
+<option value="/d/">/d/</option>
+<option value="/b/">/b/</option>
+<option value="/fag/">/fag/</option>
+<option value="/soc/">/soc/</option>
+<option value="/r/">/r/</option>
+<option value="/cp/">/cp/</option>
+<option value="/abu/">/abu/</option>
+<option value="/int/">/int/</option>
+<option value="/mdk/">/mdk/</option>
+</optgroup>
+<optgroup label="Взрослым">
+<option value="/fg/">/fg/</option>
+<option value="/fur/">/fur/</option>
+<option value="/g/">/g/</option>
+<option value="/ga/">/ga/</option>
+<option value="/h/">/h/</option>
+<option value="/ho/">/ho/</option>
+<option value="/hc/">/hc/</option>
+<option value="/e/">/e/</option>
+<option value="/fet/">/fet/</option>
+<option value="/sex/">/sex/</option>
+</optgroup>
+<optgroup label="Пробное">
+<option value="/pvc/">/pvc/</option>
+<option value="/trv/">/trv/</option>
+<option value="/izd/">/izd/</option>
+<option value="/web/">/web/</option>
+<option value="/hh/">/hh/</option>
+<option value="/dom/">/dom/</option>
+<option value="/fs/">/fs/</option>
+</optgroup>
+</select>
+</div>
+</ul>
+<ul style="float:right;"></ul>
+</ul>
+<hr>
+<nav class="rmenu desktop">
+<span class="nowrap">Тематика&nbsp;[<a title="автомобили и транспорт" href="/au/">au</a> / <a title="велосипеды" href="/bi/">bi</a> / <a title="бизнес" href="/biz/">biz</a> / <a title="книги" href="/bo/">bo</a> / <a title="Барахолка" href="/br/">br</a> / <a title="комиксы и мультфильмы" href="/c/">c</a> / <a title="культура" href="/cul/">cul</a> / <a title="другие страны и туризм" href="/em/">em</a> / <a title="конец света" href="/ew/">ew</a> / <a title="мода и стиль" href="/fa/">fa</a> / <a title="физкультура" href="/fiz/">fiz</a> / <a title="иностранные языки" href="/fl/">fl</a> / <a title="Фэнтези" href="/fs/">fs</a> / <a title="футбол" href="/ftb/">ftb</a> / <a title="hip-hop" href="/hh/">hh</a> / <a title="история" href="/hi/">hi</a> / <a title="медицина" href="/me/">me</a> / <a title="магия" href="/mg/">mg</a> / <a title="my little pony" href="/mlp/">mlp</a> / <a title="мотоциклы" href="/mo/">mo</a> / <a title="Фильмы" href="/mov/">mov</a> / <a title="музыка" href="/mu/">mu</a> / <a title="животные и природа" href="/ne/">ne</a> / <a title="активный отдых" href="/out/">out</a> / <a title="фигурки" href="/pvc/">pvc</a> / <a title="философия" href="/ph/">ph</a> / <a title="политика и новости" href="/po/">po</a> / <a title="психология" href="/psy/">psy</a> / <a title="религия и философия" href="/re/">re</a> / <a title="научная фантастика" href="/sf/">sf</a> / <a title="наука" href="/sci/">sci</a> / <a title="паранормальные явления" href="/sn/">sn</a> / <a title="спорт" href="/sp/">sp</a> / <a title="космос и астрономия" href="/spc/">spc</a> / <a title="транспорт и авиация" href="/tr/">tr</a> / <a title="тв и кино" href="/tv/">tv</a> / <a title="образование" href="/un/">un</a> / <a title="оружие" href="/w/">w</a> / <a title="warhammer" href="/wh/">wh</a> / <a title="военная техника и оружие" href="/wm/">wm</a> / <a title="Двач чат" href="/chat/">chat</a>]</span>
+<span class="nowrap">Творчество&nbsp;[<a title="столовая" href="/di/">di</a> / <a title="дизайн" href="/de/">de</a> / <a title="хобби" href="/diy/">diy</a> / <a title="домострой" href="/dom/">dom</a> / <a title="flash &amp; gif" href="/f/">f</a> / <a title="графомания" href="/izd/">izd</a> / <a title="музыканты" href="/mus/">mus</a> / <a title="мазня" href="/o/">o</a> / <a title="живопись" href="/pa/">pa</a> / <a title="фото" href="/p/">p</a> / <a title="обои и высокое разрешение" href="/wp/">wp</a> / <a title="Работа и карьера" href="/wrk/">wrk</a> / <a title="трёхмерная графика" href="/td/">td</a> / <a title="путешествия" href="/trv/">trv</a>] </span>
+<span class="nowrap">Техника и софт&nbsp;[<a title="криптовалюта" href="/cc/">cc</a> / <a title="gamedev" href="/gd/">gd</a> / <a title="компьютерное железо" href="/hw/">hw</a> / <a title="мобильные устройства и приложения" href="/mobi/">mobi</a> / <a title="программирование" href="/pr/">pr</a> / <a title="радиотехника" href="/ra/">ra</a> / <a title="программы" href="/s/">s</a> / <a title="техника" href="/t/">t</a> / <a title="веб-мастера" href="/web/">web</a>]</span>
+<span class="nowrap">Игры&nbsp;[<a title="настольные игры" href="/bg/">bg</a> /<a title="консоли" href="/cg/">cg</a> /<a title="азартные игры" href="/gb/">gb</a> / <a title="minecraft" href="/mc/">mc</a> / <a title="massive multiplayer online games" href="/mmo/">mmo</a> / <a title="Multiplayer Online Battle Arena" href="/moba/">moba</a> / <a title="the elder scrolls" href="/tes/">tes</a> / <a title="видеоигры" href="/vg/">vg</a> / <a title="текстовые авторские рпг" href="/wr/">wr</a>]</span>
+<span class="nowrap">Японская культура&nbsp;[<a title="аниме" href="/a/">a</a> / <a title="аниме арт" href="/aa/">aa</a> / <a title="фэндом" href="/fd/">fd</a> / <a title="японская культура" href="/ja/">ja</a> / <a title="манга" href="/ma/">ma</a> / <a title="rozen maiden" href="/rm/">rm</a> / <a title="touhou" href="/to/">to</a> / <a title="визуальные новеллы" href="/vn/">vn</a>]</span>
+<span class="nowrap">Разное&nbsp;[<a title="дискуссии о два.ч" href="/d/">d</a> / <a title="бред" href="/b/">b</a> / <a title="общение" href="/soc/">soc</a> / <a title="анимация" href="/media/">media</a> / <a title="просьбы" href="/r/">r</a> / <a title="здесь живет абу" href="/abu/">abu</a> / <a title="twitter" href="http://twitter.com/abunyasha">@</a> / <a title="international" href="/int/">int</a> / <a title="олдфаги" href="/old/">old</a>]</span>
+<span class="nowrap">Взрослым&nbsp;[<a title="трапы" href="/fg/">fg</a> / <a title="фурри" href="/fur/">fur</a> / <a title="девушки" href="/g/">g</a> / <a title="геи" href="/ga/">ga</a> / <a title="хентай" href="/h/">h</a> / <a title="прочий хентай" href="/ho/">ho</a> / <a title="hardcore" href="/hc/">hc</a> / <a title="extreme pron" href="/e/">e</a> / <a title="фетиш" href="/fet/">fet</a> / <a title="секс и отношения" href="/sex/">sex</a> / <a title="фагготрия" href="/fag/">fag</a>]</span>
+<span class="nowrap">Пробное&nbsp;[<a title="теории заговора" href="/zog/">zog</a> / <a title="guro" href="/guro/">guro</a> / <a title="Japanese Street Fashion" href="/jsf/">jsf</a> / <a title="советский союз" href="/ussr/">ussr</a> / <a title="Украина" href="/ukr/">ukr</a>]</span>
+<span class="nowrap">[&nbsp;<a title="теории заговора" href="/userboards.html" target="_blank">Пользовательские доски</a>&nbsp;]</span>
+<div class="dropd-boards" style="display: none;">
+<span class="dropd-board-btn" id="dropd-board-btn">Мои доски <i class="fa fa-caret-down"></i></span>
+<div class="dropd-board-list" id="dropd-board-list">
+<ul id="dropd-board-list-ul">
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="logo">
+<a class="board-banner desktop" title="/fiz/" href="/fiz/"><img src="/ololo/fiz_2.jpg" style="border:0px none;"></a>
+<br>
+<a href="/pr/" style="text-decoration:none;color:inherit;">
+<span id="title">
+Программирование
+</span>
+</a>
+</div>
+<hr>
+<div class="norm-reply">
+<div class="reply-label-wrapper">
+<span class="desktop">[<span id="TopNormalReplyLabel" class="reply-label reply-label-top">абв а</span>]</span>
+<span class="desktop favorite-board" style="display:none;">[ <i title="Добавить в мои доски" class="fa fa-star-o postbtn-favorite-board" data-num="" id=""></i> ]</span>
+<span id="TopNormalReplyLabel" class="reply-label button-mob mobile reply-label-top">абв б</span>
+</div>
+<div id="TopNormalReply" class="TopNormalReply"></div>
+</div>
+<div id="settings-window" style="display:none;" class="qr qr-settings">
+<div id="settings-window-header" class="qr-header">
+<span id="settings-title">Настройки</span>
+</div>
+<div id="settings-body">
+</div>
+<div id="settings-footer" class="setting-buttons">
+<input type="button" id="settings-btn-save" value="Сохранить">
+<input type="button" id="settings-btn-export" value="Экспорт">
+<input type="button" id="settings-btn-import" value="Импорт">
+<input type="button" id="settings-btn-close" value="Отмена">
+</div>
+</div>
+<div id="setting-editor-window" style="display:none;" class="qr qr-settings">
+<div id="setting-editor-window-header" class="qr-header">
+<span id="setting-editor-title"></span>
+</div>
+<div id="setting-editor-body">
+</div>
+<div id="setting-editor-footer" class="setting-buttons">
+<input type="button" id="setting-editor-btn-save" value="Сохранить">
+<input type="button" id="setting-editor-btn-export" value="Экспорт">
+<input type="button" id="setting-editor-btn-import" value="Импорт">
+<input type="button" id="setting-editor-btn-close" value="Отмена">
+</div>
+</div>
+<div class="qr qr-reply" id="qr" style="display:none;">
+<div class="qr-header" id="qr-header">абв с<span class="qr-close" id="qr-close">X</span></div>
+<form id="qr-postform" class="qr-postform" action="/makaba/posting.fcgi" method="post" enctype="multipart/form-data">
+<input type="hidden" name="task" value="post">
+<input type="hidden" name="board" value="pr">
+<input type="hidden" name="thread" id="qr-thread" value="420034">
+<input type="hidden" name="usercode" value="" class="qr-usercode-input">
+<input class="mod-code-input" type="hidden" value="" name="code">
+<input type="hidden" name="captcha_type" value="recaptcha">
+<div class="qr-mail">
+<input name="email" type="text" id="qr-e-mail" placeholder="E-mail" class="qmail">
+<input type="submit" id="qr-submit" value="Отправить" class="qsubmit">
+</div>
+<div class="symbol-counter">
+<span class="message-byte-len">15000</span>
+<textarea name="comment" rows="6" wrap="soft" placeholder="Комментарий. Макс. длина 15000" class="qcomment" id="qr-shampoo"></textarea>
+</div>
+<div class="toolbar-area">
+<div id="qr-CommentToolbar"></div>
+</div>
+<div class="qr-images">
+<input type="file" name="image1" id="qr-image1" class="postform-image">
+<input type="file" name="image2" id="qr-image2" class="postform-image">
+<input type="file" name="image3" id="qr-image3" class="postform-image">
+<input type="file" name="image4" id="qr-image4" class="postform-image">
+</div>
+<div class="captcha-box">
+<div class="captcha-image" id="captcha-widget"></div>
+<input type="hidden" name="captcha" class="captcha-key">
+
+</div>
+</form>
+<div id="qr-submit-box" style="display:none">
+<div id="qr-submit-label">Отправка поста</div>
+<div id="qr-progress-control" style="display:none">
+<progress id="qr-progress-bar" value="0" max="1"></progress>
+<input type=button id="qr-cancel-upload" value="Отмена">
+</div>
+</div>
+</div>
+<div class="qr qr-favourites" id="qr-fav" style="display: none">
+<div class="qr-header" id="qr-fav-header"><span class="qr-close" id="qr-fav-close">X</span></div>
+<div class="qr-body" id="qr-fav-body">
+</div>
+</div>
+<form id="postform" class="postform" action="/makaba/posting.fcgi" method="post" enctype="multipart/form-data" style="display:none;">
+
+<hr class="postform-hr">
+<input type="hidden" name="task" value="post">
+<input type="hidden" name="board" value="pr">
+<input type="hidden" name="thread" value="420034">
+<input type="hidden" name="usercode" value="" id="usercode-input" class="usercode-input">
+<input class="mod-code-input" type="hidden" value="" name="code">
+<input type="hidden" name="captcha_type" value="recaptcha">
+<table>
+<tbody>
+<tr class="mail">
+<td class="label desktop"><label for="name">Email</label></td>
+<td>
+<input id="e-mail" type="text" value="" name="email" size="30" placeholder="email">
+<input type="submit" id="submit" name="submit" value="Отправить" class="desktop">
+</td>
+</tr>
+<tr class="name">
+<td class="label desktop"><label for="name">Имя</label></td>
+<td>
+<input type="text" value="" id="name" name="name" size="30" placeholder="имя">
+</td>
+</tr>
+<tr class="post-subject">
+<td class="label desktop">
+<label for="subject">Тема</label>
+</td>
+<td>
+<input type="text" maxlength="150" id="subject" name="subject" placeholder="тема">
+</td>
+</tr>
+<tr class="comment-area">
+<td class="label desktop">
+<label for="msg">Пост</label>
+</td>
+<td class="symbol-counter">
+<span class="message-byte-len">15000</span>
+<textarea name="comment" id="shampoo" rows="10" placeholder="Комментарий. Макс. длина 15000"></textarea>
+</td>
+</tr>
+<tr class="toolbar-area">
+<td class="desktop"></td>
+<td id="CommentToolbar">
+</td>
+</tr>
+<tr class="option-area desktop">
+<td class="label desktop">Опции</td>
+<td>
+<div class="box first" onclick="ToggleSage()">
+<input type="checkbox" id="sagecheckbox" name="sage">
+<label for="sage">
+<span title="Don't bump the thread">Sage</span>
+</label>
+</div>
+<div class="box">
+<input type="checkbox" id="makewatermark" name="water_mark">
+<label for="makewatermark">
+<span title="Поставить ватермарку">Ватермарка</span>
+</label>
+</div>
+<div class="box" style="display:none" id="mod-mark-checkbox">
+<input type="checkbox" value="1" name="mod_mark" id="mod-mark-box">
+<label for="mod-mark-box">
+<span title="Поставить мод тег">Мод тег</span>
+</label>
+</div>
+<div class="box last">
+<input type="checkbox" id="op" name="op_mark" value="1">
+<label for="op">
+<span title="Подписываться ОПом">ОП треда</span>
+</label>
+</div>
+</td>
+</tr>
+<tr class="images-area">
+<td class="label desktop">
+<label for="files-1">Файлы</label>
+</td>
+<td>
+<input type="file" name="image1" id="image1" class="postform-image">
+<input type="file" name="image2" id="image2" class="postform-image">
+<input type="file" name="image3" id="image3" class="postform-image">
+<input type="file" name="image4" id="image4" class="postform-image">
+</td>
+</tr>
+<tr>
+<td class="label desktop">
+<label for="recaptcha-response-field">Captcha</label>
+</td>
+<td style="vertical-align:middle;">
+<div class="captcha-box">
+<div class="captcha-image" id="captcha-widget-main"></div>
+<input type="hidden" name="captcha" class="captcha-key">
+
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="mobile send-mob"><input class="button-mob" type="submit" id="submit" name="submit" value="Отправить"></div>
+</td>
+</tr>
+<tr class="rules-area">
+<td colspan="2"><span class="rules">Перед отправкой сообщения прочтите <a href="/faq.html" target="_blank">FAQ</a> и <a href="/rules.html" target="_blank">правила раздела</a>.</span></td>
+</tr>
+</tbody>
+</table>
+<div class="kupi-passcode-suka">
+<hr class="postform-hr">
+<span class="passcode"></span>
+</div>
+</form>
+<hr class="postform-hr">
+<div class="news desktop">
+<div>25/12/14 - <a href="/abu/res/36036.html">Очень важный пост, касательно пожертвований для борды</a></div>
+<div>24/12/14 - <a href="/abu/res/35986.html">Возможность выбора Я.Капчи и Рекапчи</a></div>
+<div>22/12/14 - <a href="/abu/res/35567.html">О капче, проблема с Яндексом</a></div>
+</div>
+<hr class="prerekl-hr">
+<section class="rekl">
+<div class="rek13"><a href="https://2ch.hk/abu/res/36036.html" target="blank"><img src="/abu/src/36036/14194614177000.gif "></a></a></div>
+</section>
+<hr class="postrekl-hr">
+<div class="top-user-boards desktop">
+<span><a href="/gabe/">/gabe/</a> - Gabe Logan Newell</a></span>
+<span><a href="/es/">/es/</a> - Бесконечное Лето</a></span>
+<span><a href="/vape/">/vape/</a> - Электронные сигареты</a></span>
+<span><a href="/wow/">/wow/</a> - World of Warcraft</a></span>
+<span><a href="/r34/">/r34/</a> - Правило 34</a></span>
+</div>
+<hr>
+</header>
+<section class="posts">
+<a id="top"></a>
+<div class="thread-nav desktop">
+[<a href="/pr/">Назад</a>]<span id="ABU-getnewposts">[<a href="#" onclick="updateThread(); return false;">Обновить тред</a>]</span>[<a href="#bottom">Вниз</a>][<a href="/makaba/makaba.fcgi?task=catalog&board=pr" target="_blank">Каталог</a>]
+[ <span class="autorefresh"><input type="checkbox" class="autorefresh-checkbox" id="autorefresh-checkbox-top"> Автообновление <span class="autorefresh-countdown"></span></span>]
+</div>
+<div class="thread-nav-mob mobile">
+<a class="button-mob" href="/pr/">Назад</a>
+<a class="button-mob" href="#bottom">Вниз</a>
+<a class="button-mob" href="/makaba/makaba.fcgi?task=catalog&board=pr">Каталог</a>
+<a class="button-mob" href="#" onclick="updateThread(); return false;">Обновить</a>
+</div>
+<hr>
+<form id="posts-form">
+<div id="thread-420034" class="thread">
+<div id="post-420034" class="oppost-wrapper">
+<div class="post oppost" id="post-body-420034" data-num="420034">
+<div class="post-details" id="post-details-420034">
+<input type="checkbox" name="delete" class="turnmeoff" value="420034"/>
+<span class="post-title">
+Олимпиадных задач нить
+</span>
+<span class="ananimas">Аноним</span>
+<span class="ophui"># OP</span>&nbsp;
+<span class="posttime-reflink">
+<span class="posttime">26/12/14 Птн 17:22:12&nbsp;</span>
+<span class="reflink">
+<a href="/pr/res/420034.html#420034">№</a><a href="/pr/res/420034.html#420034" class="postbtn-reply-href" name="420034">420034</a>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="420034" id="fa-star420034"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar420034"></span>
+<a class="postbtn-hide" href="#" data-num="420034"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('420034'); return false;"></a>
+<a class="postbtn-expall" href="#" onclick="expandAllPics(); return false;"></a>
+<span data-num="420034" class="postbtn-options" title="Опции поста"></span>
+
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/pr/src/420034/14196037321930.jpg">14196037321930.jpg</a>
+<span class="filesize">(24Кб, 512x512)</span>
+</figcaption>
+<div id="exlink-420034-529dff166648d9240037888b802b62d6" class="image-link">
+<a href="/pr/src/420034/14196037321930.jpg" target="_blank" name="expandfunc" onclick="return expand('420034-529dff166648d9240037888b802b62d6','/pr/src/420034/14196037321930.jpg','/pr/thumb/420034/14196037321930s.jpg',512,512,250,250)">
+<img src="/pr/thumb/420034/14196037321930s.jpg" width="250" height="250" alt="24" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m420034" class="post-message"></blockquote>
+<div id="refmap-420034" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-420042" class="post-wrapper">
+<div class="post reply " id="post-body-420042" data-num="420042">
+<div class="post-details" id="post-details-420042">
+<input type="checkbox" name="delete" class="turnmeoff" value="420042"/>
+<a href="mailto:sage" class="post-email">Аноним</a>
+<span class="posttime-reflink">
+<span class="posttime">26/12/14 Птн 18:51:56&nbsp;</span>
+<span class="reflink">
+<a href="/pr/res/420034.html#420042">№</a><a href="/pr/res/420034.html#420042" class="postbtn-reply-href" name="420042">420042</a>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="420042" class="postbtn-options" title="Опции поста"></span>
+
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m420042" class="post-message">
+<a href="/pr/res/420034.html#420034" class="post-reply-link" data-thread="420034" data-num="420034">>>420034</a><br>числа каталана<br>ёба лойс rgtbctltpx
+</blockquote>
+<div id="refmap-420042" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+</form>
+<a id="bottom"></a>
+<div class="thread-nav desktop">
+[<a href="/pr/">Назад</a>]<span id="ABU-getnewposts">[<a href="#" onclick="updateThread(); return false;">Обновить тред</a>]</span>[<a href="#top">Вверх</a>][<a href="/makaba/makaba.fcgi?task=catalog&board=pr" target="_blank">Каталог</a>]
+[<a href="#" onclick="UnbanShow(); return false;">Реквест разбана</a>]
+[<a href="#" id="postbtn-favorite-bottom" onclick="return false;">Подписаться на тред</a>]
+[ <span class="autorefresh" style="display:none"><input type="checkbox" class="autorefresh-checkbox" id="autorefresh-checkbox-bot"> Автообновление <span class="autorefresh-countdown"></span></span>]
+</div>
+<div class="thread-nav-mob mobile">
+<a class="button-mob" href="/pr/">Назад</a>
+<a class="button-mob" href="#top">Вверх</a>
+<a class="button-mob" href="/makaba/makaba.fcgi?task=catalog&board=pr">Каталог</a>
+<a class="button-mob" href="#" onclick="updateThread(); return false;">Обновить</a>
+</div>
+<hr>
+</section>
+<div id="unban-div" class="settings-wrap" style="display:none;">
+<a href="#" id="setclose" onclick="UnbanHide(this); return false;"></a>
+<div class="title">Запрос разбана</div>
+<form id="unban-form">
+<div class="rowelems">
+<label for="unban-ban-num-input">Номер бана:</label>
+<input type="text" id="unban-ban-num-input" value="" autocomplete="off"/>
+</div>
+<div class="rowelems">
+<label for="unban-comment-input">Замечательная история его получения:</label>
+<textarea rows="6" cols="45" id="unban-comment-input"></textarea>
+</div>
+<div class="rowelems">
+<div id="unban-captcha-div"></div>
+<label for="unban-ban-num-input">Введите капчу:</label>
+<input type="text" id="unban-captcha-input" value="" autocomplete="off"/>
+</div>
+<div class="setbuttons"><input type="submit" onclick="UnbanSubmit(); return false;" value="Отправить запрос"></div>
+</form>
+</div>
+</div>
+<footer class="footer">
+<div class="norm-reply">
+<div class="reply-label-wrapper">
+<span class="desktop">[<span id="BottomNormalReplyLabel" class="reply-label reply-label-bot">абв д</span>]</span>
+</div>
+<span id="BottomNormalReplyLabel" class="reply-label button-mob mobile reply-label-bot">ёба лойс rgtbctltpx</span>
+<div id="BottomNormalReply" class="BottomNormalReply"></div>
+</div>
+<hr class="pre-rekl">
+<section class="rekl">
+<div class="r36"><a href="http://tv.2ch.hk/" target="blank"><img src="/images/tv2ch.jpg"></a></div>
+</section>
+<hr>
+
+<div style="float: right; margin: 0 0 0.5em 0;">
+<form id="report-form" name="report_form" action="/makaba/makaba.fcgi" enctype="multipart/form-data" method="post">
+<input type="hidden" name="task" value="report"/>
+<input type="hidden" name="board" value="pr"/>
+<input type="hidden" name="thread" value="420034"/>
+<input type="text" name="comment" id="report-form-comment" value="" placeholder="Введите вашу жалобу сюда"/>&nbsp;
+<input type="submit" value="Отправить жалобу">
+</form>
+</div>
+
+<div class="desktop adminbar-bottom" id="adminbar">
+<div class="rmenu" id="boardNavBottom">
+<span class="nowrap">Тематика&nbsp;[<a title="автомобили и транспорт" href="/au/">au</a> / <a title="велосипеды" href="/bi/">bi</a> / <a title="бизнес" href="/biz/">biz</a> / <a title="книги" href="/bo/">bo</a> / <a title="Барахолка" href="/br/">br</a> / <a title="комиксы и мультфильмы" href="/c/">c</a> / <a title="культура" href="/cul/">cul</a> / <a title="другие страны и туризм" href="/em/">em</a> / <a title="конец света" href="/ew/">ew</a> / <a title="мода и стиль" href="/fa/">fa</a> / <a title="физкультура" href="/fiz/">fiz</a> / <a title="иностранные языки" href="/fl/">fl</a> / <a title="Фэнтези" href="/fs/">fs</a> / <a title="футбол" href="/ftb/">ftb</a> / <a title="hip-hop" href="/hh/">hh</a> / <a title="история" href="/hi/">hi</a> / <a title="медицина" href="/me/">me</a> / <a title="магия" href="/mg/">mg</a> / <a title="my little pony" href="/mlp/">mlp</a> / <a title="мотоциклы" href="/mo/">mo</a> / <a title="Фильмы" href="/mov/">mov</a> / <a title="музыка" href="/mu/">mu</a> / <a title="животные и природа" href="/ne/">ne</a> / <a title="активный отдых" href="/out/">out</a> / <a title="фигурки" href="/pvc/">pvc</a> / <a title="философия" href="/ph/">ph</a> / <a title="политика и новости" href="/po/">po</a> / <a title="психология" href="/psy/">psy</a> / <a title="религия и философия" href="/re/">re</a> / <a title="научная фантастика" href="/sf/">sf</a> / <a title="наука" href="/sci/">sci</a> / <a title="паранормальные явления" href="/sn/">sn</a> / <a title="спорт" href="/sp/">sp</a> / <a title="космос и астрономия" href="/spc/">spc</a> / <a title="транспорт и авиация" href="/tr/">tr</a> / <a title="тв и кино" href="/tv/">tv</a> / <a title="образование" href="/un/">un</a> / <a title="оружие" href="/w/">w</a> / <a title="warhammer" href="/wh/">wh</a> / <a title="военная техника и оружие" href="/wm/">wm</a> / <a title="Двач чат" href="/chat/">chat</a>]</span>
+<span class="nowrap">Творчество&nbsp;[<a title="столовая" href="/di/">di</a> / <a title="дизайн" href="/de/">de</a> / <a title="хобби" href="/diy/">diy</a> / <a title="домострой" href="/dom/">dom</a> / <a title="flash &amp; gif" href="/f/">f</a> / <a title="графомания" href="/izd/">izd</a> / <a title="музыканты" href="/mus/">mus</a> / <a title="мазня" href="/o/">o</a> / <a title="живопись" href="/pa/">pa</a> / <a title="фото" href="/p/">p</a> / <a title="обои и высокое разрешение" href="/wp/">wp</a> / <a title="Работа и карьера" href="/wrk/">wrk</a> / <a title="трёхмерная графика" href="/td/">td</a> / <a title="путешествия" href="/trv/">trv</a>] </span>
+<span class="nowrap">Техника и софт&nbsp;[<a title="криптовалюта" href="/cc/">cc</a> / <a title="gamedev" href="/gd/">gd</a> / <a title="компьютерное железо" href="/hw/">hw</a> / <a title="мобильные устройства и приложения" href="/mobi/">mobi</a> / <a title="программирование" href="/pr/">pr</a> / <a title="радиотехника" href="/ra/">ra</a> / <a title="программы" href="/s/">s</a> / <a title="техника" href="/t/">t</a> / <a title="веб-мастера" href="/web/">web</a>]</span>
+<span class="nowrap">Игры&nbsp;[<a title="настольные игры" href="/bg/">bg</a> /<a title="консоли" href="/cg/">cg</a> /<a title="азартные игры" href="/gb/">gb</a> / <a title="minecraft" href="/mc/">mc</a> / <a title="massive multiplayer online games" href="/mmo/">mmo</a> / <a title="Multiplayer Online Battle Arena" href="/moba/">moba</a> / <a title="the elder scrolls" href="/tes/">tes</a> / <a title="видеоигры" href="/vg/">vg</a> / <a title="текстовые авторские рпг" href="/wr/">wr</a>]</span>
+<span class="nowrap">Японская культура&nbsp;[<a title="аниме" href="/a/">a</a> / <a title="аниме арт" href="/aa/">aa</a> / <a title="фэндом" href="/fd/">fd</a> / <a title="японская культура" href="/ja/">ja</a> / <a title="манга" href="/ma/">ma</a> / <a title="rozen maiden" href="/rm/">rm</a> / <a title="touhou" href="/to/">to</a> / <a title="визуальные новеллы" href="/vn/">vn</a>]</span>
+<span class="nowrap">Разное&nbsp;[<a title="дискуссии о два.ч" href="/d/">d</a> / <a title="бред" href="/b/">b</a> / <a title="общение" href="/soc/">soc</a> / <a title="анимация" href="/media/">media</a> / <a title="просьбы" href="/r/">r</a> / <a title="здесь живет абу" href="/abu/">abu</a> / <a title="twitter" href="http://twitter.com/abunyasha">@</a> / <a title="international" href="/int/">int</a> / <a title="олдфаги" href="/old/">old</a>]</span>
+<span class="nowrap">Взрослым&nbsp;[<a title="трапы" href="/fg/">fg</a> / <a title="фурри" href="/fur/">fur</a> / <a title="девушки" href="/g/">g</a> / <a title="геи" href="/ga/">ga</a> / <a title="хентай" href="/h/">h</a> / <a title="прочий хентай" href="/ho/">ho</a> / <a title="hardcore" href="/hc/">hc</a> / <a title="extreme pron" href="/e/">e</a> / <a title="фетиш" href="/fet/">fet</a> / <a title="секс и отношения" href="/sex/">sex</a> / <a title="фагготрия" href="/fag/">fag</a>]</span>
+<span class="nowrap">Пробное&nbsp;[<a title="теории заговора" href="/zog/">zog</a> / <a title="guro" href="/guro/">guro</a> / <a title="Japanese Street Fashion" href="/jsf/">jsf</a> / <a title="советский союз" href="/ussr/">ussr</a> / <a title="Украина" href="/ukr/">ukr</a>]</span>&nbsp;&nbsp;
+</div>
+<hr>
+</div>
+<section class="board-info">
+<div class="board-speed"></div></p>
+<div align="right"><script type="text/javascript">fastload();</script></div>
+</section>
+<script src="https://www.google.com/recaptcha/api.js?render=explicit&hl=en" async defer></script>
+</footer>
+<div class="up-nav-arrow nav-arrows" id="up-nav-arrow"></div>
+<div class="down-nav-arrow nav-arrows" id="down-nav-arrow"></div>
+<div id="media-thumbnail"></div>
+<div class="boardstats" id="boardstats-box">
+<div class="boardstats-header" id="boardstats-header">
+Топ тредов
+<i class="fa fa-angle-double-down " id="boardstats-arrow-down"></i>
+</div>
+<div id="boardstats-table">
+</div>
+<div class="boardstats-header-update">
+<i class="fa fa-refresh update-stats-box"></i>
+<i class="fa fa-spinner update-stats-box-updating"></i>
+</div>
+</div>
+</body>
+</html>
